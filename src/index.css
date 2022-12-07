@@ -20,5 +20,7 @@ a {
   box-sizing: border-box;
   --main: #ED3F66;
   --text: #F9F3F0;
+  --text-three: #ffdce4;
+  --text-two: #f1a1b4;
   --accent: #85FFE0;
 }
