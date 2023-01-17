@@ -14,7 +14,7 @@ export const LandingContainer = styled.div`
 export const LandingHeading = styled.h1`
    color: var(--text);
    z-index: 5;
-   padding: padding: 5px;
+   padding: 5px;
 `;
 
 export const HeadingContainer = styled.div`
