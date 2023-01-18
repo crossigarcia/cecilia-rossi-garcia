@@ -10,7 +10,7 @@ const Landing = () => {
      <div className={`landing-page-container ${theme}`}>
        <div className={`landing-page-text-container`}>
          <h1 className={`landing-page-heading ${theme}`}>
-           <Link to="/home">Cecilia Rossi Garc&iacute;a</Link>
+           <Link to="/home" className={`landing-page-link ${theme}`}>Cecilia Rossi Garc&iacute;a</Link>
          </h1>
          <div className="sub-heading-container">
            <span className={`sub-heading left ${theme}`}>frontend</span>
