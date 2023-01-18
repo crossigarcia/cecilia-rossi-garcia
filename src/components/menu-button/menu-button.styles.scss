@@ -1,55 +1,151 @@
 $breakpoint-phone: 768px;
 .menu-button {
-   width: 300px;
-   height: 300px;
-   border-radius: 300px;
    border: none;
-   font-size: 25px;
    font-weight: 600;
-   color: var(--black);
    cursor: pointer;
    transition: all 0.5s ease-in-out;
    position: absolute;
+   width: 100px;
+   height: 100px;
+   border-radius: 100px;
 
-   &.cyan {
-      background-color: rgba(0, 255, 255, 0.5);
-      left: calc(50% - 150px);
-      top: calc(50% - 275px);
-      @media (max-width: $breakpoint-phone) {
-         top: -10px;
-      }
-
-      &:hover {
-         background-color: cyan;
-         letter-spacing: 1px;
-      }
+   &.large-menu {
+      width: 300px;
+      height: 300px;
+      border-radius: 300px;
+      font-size: 25px;
    }
-   &.magenta {
-      background-color: rgba(255, 0, 255, 0.5);
-      left: calc(50% - 280px);
-      top: calc(50% - 95px);
-      @media (max-width: $breakpoint-phone) {
-         top: 200px;
+
+   &.top {
+      left: -80px;
+      top: 0;
+
+      &.cyan {
+         background-color: rgba(0, 255, 255, 0.5);
+         color: var(--black);
+      }
+
+      &.gray {
+         background-color: rgba(145, 145, 145, 0.5);
+         color: var(--white);
+      }
+
+      &.large-menu {
          left: calc(50% - 150px);
+         top: calc(50% - 275px);
+      
+         @media (max-width: $breakpoint-phone) {
+            top: -10px;
+         }
       }
 
-      &:hover {
-         background-color: magenta;
-         letter-spacing: 1px;
-      }
-   }
-   &.yellow {
-      background-color: rgba(255, 255, 0, 0.5);
-      left: calc(60% - 140px);
-      top: calc(50% - 90px);
       @media (max-width: $breakpoint-phone) {
-         top: 400px;
-         left: calc(50% - 150px);
+         left: -10px;
+         top: -20px;
       }
 
       &:hover {
-         background-color: yellow;
          letter-spacing: 1px;
+
+         &.cyan {
+            background-color: cyan;
+         }
+         &.gray {
+            background-color: rgb(145, 145, 145);
+         }
       }
    }
+
+
+   &.middle {
+      left: -80px;
+      top: 110px;
+
+      &.magenta {
+         background-color: rgba(255, 0, 255, 0.5);
+         color: var(--black);
+      }
+
+      &.dark-gray {
+         background-color: rgba(64, 64, 64, 0.5);
+         color: var(--white);
+      }
+      
+      &.large-menu {
+         left: calc(50% - 280px);
+         top: calc(50% - 95px);
+      
+         @media (max-width: $breakpoint-phone) {
+            top: 200px;
+            left: calc(50% - 150px);
+         }
+      }
+
+      @media (max-width: $breakpoint-phone) {
+         left: 55px;
+         top: -20px;
+      }
+
+      &:hover {
+         letter-spacing: 1px;
+
+         &.magenta {
+            background-color: magenta;
+         }
+
+         &.dark-gray {
+            background-color: rgb(64,64,64);
+         }
+      }
+   }
+
+   &.bottom {
+      left: -80px;
+      top: 220px;
+
+      &.yellow {
+         background-color: rgba(255, 255, 0, 0.5);
+         color: var(--black);
+      }
+      &.light-gray {
+         background-color: rgba(214, 214, 214, 0.5);
+         color: var(--white);
+      }
+
+      &.large-menu {
+         left: calc(60% - 140px);
+         top: calc(50% - 90px);
+      
+         @media (max-width: $breakpoint-phone) {
+            top: 400px;
+            left: calc(50% - 150px);
+         }
+      }
+
+      @media (max-width: $breakpoint-phone) {
+         left: 120px;
+         top: -20px;
+      }
+
+      &:hover {
+         letter-spacing: 1px;
+
+         &.yellow {
+            background-color: yellow;
+         }
+
+         &.light-gray {
+            background-color: var(--grey);
+         }
+      }
+   }
+
+   @media (max-width: $breakpoint-phone) {
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+      font-size: 10px;
+   }
+
+   
 }
