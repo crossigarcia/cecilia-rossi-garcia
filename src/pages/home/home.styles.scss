@@ -3,7 +3,18 @@
    height: 100vh;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    position: relative;
+
+   .home-menu-container {
+      width: 80%;
+      height: 80%;
+      margin-top: 50px;
+      position: relative;
+      z-index: 10;
+      @media (max-width: 768px) {
+         margin-top: 10px;
+      }
+}
 }

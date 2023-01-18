@@ -51,4 +51,42 @@
          }
       }
    }
+   .language-switch-container {
+      background-color: transparent;
+      height: fit-content;
+      margin: 20px;
+
+      .language-switch {
+         &.esp {
+            .ant-switch-inner {
+                  background: var(--white);
+               }
+            
+               .ant-switch-inner-checked {
+                  color: var(--black);
+               }
+            
+               .ant-switch-handle {
+                  &::before {
+                     background: var(--black);
+                  }
+            }
+         }
+         &.eng {
+            .ant-switch-inner {
+               background: var(--black);
+            }
+         
+            .ant-switch-inner-unchecked {
+               color: var(--white);
+            }
+         
+            .ant-switch-handle {
+               &::before {
+                  background: var(--white);
+               }
+            }
+         }
+      }
+   }
 }

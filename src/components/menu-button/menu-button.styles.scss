@@ -1,0 +1,55 @@
+$breakpoint-phone: 768px;
+.menu-button {
+   width: 300px;
+   height: 300px;
+   border-radius: 300px;
+   border: none;
+   font-size: 25px;
+   font-weight: 600;
+   color: var(--black);
+   cursor: pointer;
+   transition: all 0.5s ease-in-out;
+   position: absolute;
+
+   &.cyan {
+      background-color: rgba(0, 255, 255, 0.5);
+      left: calc(50% - 150px);
+      top: calc(50% - 275px);
+      @media (max-width: $breakpoint-phone) {
+         top: -10px;
+      }
+
+      &:hover {
+         background-color: cyan;
+         letter-spacing: 1px;
+      }
+   }
+   &.magenta {
+      background-color: rgba(255, 0, 255, 0.5);
+      left: calc(50% - 280px);
+      top: calc(50% - 95px);
+      @media (max-width: $breakpoint-phone) {
+         top: 200px;
+         left: calc(50% - 150px);
+      }
+
+      &:hover {
+         background-color: magenta;
+         letter-spacing: 1px;
+      }
+   }
+   &.yellow {
+      background-color: rgba(255, 255, 0, 0.5);
+      left: calc(60% - 140px);
+      top: calc(50% - 90px);
+      @media (max-width: $breakpoint-phone) {
+         top: 400px;
+         left: calc(50% - 150px);
+      }
+
+      &:hover {
+         background-color: yellow;
+         letter-spacing: 1px;
+      }
+   }
+}
