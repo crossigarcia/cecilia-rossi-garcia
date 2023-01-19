@@ -4,11 +4,10 @@
    height: 90%;
    left: calc(50% - 47%);
    top: 5%;
-   overflow: auto;
-   padding: 10px 10px 10px 20px;
+   overflow-y: auto;
+   padding: 10px;
    display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-   align-items: flex-start;
-   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-end;
 }

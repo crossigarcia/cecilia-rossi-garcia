@@ -1,16 +1,44 @@
 .project-card-container {
-   width: 250px;
-   height: 250px;
-   border-radius: 250px;
-   overflow: hidden;
-   position: relative;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   margin: 20px;
+   width: 95%;
+   height: 350px;
+   min-height: 350px;
+   box-shadow: 7px 7px 8px 3px rgba(255, 0, 255, 0.3);
+   overflow: auto;
 
-   .project-card-overlay {
-      position: absolute;
-      content: '';
-      width: 300px;
-      height: 300px;
-      border-radius: 300px;
-      background-color: magenta;
+   .project-card-text-container {
+      width: 600px;
+      margin-right: 10%;
+      color: var(--black);
    }
+   .project-card-img-container {
+         min-width: 250px;
+         width: 250px;
+         height: 250px;
+         border-radius: 250px;
+         overflow: hidden;
+         position: relative;
+   
+         .project-card-overlay {
+            position: absolute;
+            content: '';
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            background-color: magenta;
+            left: -30px;
+            top: -20px;
+            opacity: 0.2;
+         }
+   
+         .project-img {
+            width: 500px;
+         }
+      }
 }
