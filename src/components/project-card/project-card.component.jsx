@@ -1,19 +1,23 @@
-import './project-card.styles.scss';
+import { useSelector } from "react-redux";
+import "./project-card.styles.scss";
 
-export const ProjectCard = (props) => {
-   return (
-     <div className='project-card-container'>
-         <div className='project-card-text-container'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo, accusamus totam ex dolorem quos, laborum eveniet magni at possimus sapiente eligendi maxime perferendis provident! Quo itaque nemo quidem sed?
-         </div>
-         <div className="project-card-img-container">
-            <span className="project-card-overlay"></span>
-            <img
-            src={require(`../../assets/imgs/${props.fileName}`)}
-            alt={props.alt}
-            className="project-img"
-            />
-         </div>
-     </div>
-   );
-}
+export const ProjectCard = ({ project, ...props }) => {
+  const { theme } = useSelector((state) => state.theme);
+
+  return (
+    <div className={`project-card-container ${project.className} ${theme}`}>
+      <div className={`project-card-text-container ${theme}`}>
+        <h2 className={`project-title`}>{project.title}<span className="project-date">{project.date}</span></h2>
+        <p className="project-details">{project.details}</p>
+      </div>
+      <div className="project-card-img-container">
+        <span className={`project-card-overlay ${theme}`}></span>
+        <img
+          src={require(`../../assets/imgs/${project.fileName}`)}
+          alt={project.alt}
+          className="project-img"
+        />
+      </div>
+    </div>
+  );
+};
