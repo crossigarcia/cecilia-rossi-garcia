@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MenuButton } from '../../components/menu-button/menu-button.component';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setTitle } from '../../redux/features/nav-title/navTitleSlice';
 import { ProjectsContent } from '../../components/projects/projects.component';
 import './home.styles.scss';
 
 const Home = () => {
+   const dispatch = useDispatch();
    const { language } = useSelector((state) => state.language);
    const { theme } = useSelector(state => state.theme);
    const [content, setContent] = useState("large-menu");
@@ -12,6 +14,10 @@ const Home = () => {
    const handleMenuClick = (page) => {
       setContent(page);
    }
+
+   useEffect(() => {
+      dispatch(setTitle(true))
+   }, [dispatch])
 
    return (
      <div className="home-page-container">

@@ -1,0 +1,16 @@
+.project-card-container {
+   width: 250px;
+   height: 250px;
+   border-radius: 250px;
+   overflow: hidden;
+   position: relative;
+
+   .project-card-overlay {
+      position: absolute;
+      content: '';
+      width: 300px;
+      height: 300px;
+      border-radius: 300px;
+      background-color: magenta;
+   }
+}

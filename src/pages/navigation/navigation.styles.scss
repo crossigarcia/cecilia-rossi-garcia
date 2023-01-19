@@ -3,7 +3,7 @@
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: flex-end;
+   justify-content: space-between;
 
    &.cmyk {
       background-color: var(--white);
@@ -13,36 +13,58 @@
       background-color: var(--black);
    }
 
-   .theme-switch-container {
+   .nav-title-container {
       background-color: transparent;
-      height: fit-content;
+      height: 25px;
+      line-height: 25px;
+      margin-left: 20px;
+
+      .nav-title-link {
+         &.cmyk {
+            color: var(--black);
+         }
+
+         &.bw {
+            color: var(--white);
+         }
+      }
+   }
+
+   .switch-container {
       margin: 20px;
+      height: 25px;
+      width: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
 
       .theme-switch {
          &.bw {
             .ant-switch-inner {
-                  background: var(--white);
+               background: var(--white);
+            }
+   
+            .ant-switch-inner-checked {
+               color: var(--black);
+            }
+   
+            .ant-switch-handle {
+               &::before {
+                  background: var(--black);
                }
-            
-               .ant-switch-inner-checked {
-                  color: var(--black);
-               }
-            
-               .ant-switch-handle {
-                  &::before {
-                     background: var(--black);
-                  }
             }
          }
+   
          &.cmyk {
             .ant-switch-inner {
                background: var(--black);
             }
-         
+   
             .ant-switch-inner-unchecked {
                color: var(--white);
             }
-         
+   
             .ant-switch-handle {
                &::before {
                   background: var(--white);
@@ -50,16 +72,11 @@
             }
          }
       }
-   }
-   .language-switch-container {
-      background-color: transparent;
-      height: fit-content;
-      margin: 20px;
 
       .language-switch {
          &.esp {
             .ant-switch-inner {
-                  background: var(--white);
+                  background: var(--grey);
                }
             
                .ant-switch-inner-checked {
@@ -87,6 +104,15 @@
                }
             }
          }
+      }
+   }
+
+   @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      .nav-title-container {
+         margin-bottom: 10px;
       }
    }
 }
