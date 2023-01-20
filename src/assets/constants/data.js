@@ -1,6 +1,44 @@
 export const projectCardData = [
   {
     id: 1,
+    title: "Drishticon Commission",
+    date: "DEC 2022 - PRESENT",
+    details:
+      "An application for companies to keep track of employees and the data related to their pay rate, timesheets and status.",
+    fileName: "dr_commish.png",
+    alt: 'Screen shot of "Commission" website',
+    techStack: ["React", "Javascript", "CSS3", "Sass", "Java", "Ant Design", "Material UI", "Axios"],
+    resp: "Lead frontend developer, designing the UI/UX for a clean and intuitive app experience. Managing authentication and CRUD operations to conditionally render data based on the user's privileges.",
+    github: "",
+    deployed: "",
+  },
+  {
+    id: 2,
+    title: "Drishticon Recruitment Portal",
+    date: "NOV 2021 - PRESENT",
+    details:
+      "An application for creating and keeping track of candidates, clients, job openings and interviews.",
+    fileName: "dr_rcp.png",
+    alt: 'Screen shot of "Recruitment Portal" website',
+    techStack: ["React", "Javascript", "CSS3", "Sass", "Java", "Ant Design", "Material UI", "Figma", "Axios", "Jest", "Cypress"],
+    resp: "Update and maintain all frontend code, refactoring to keep up with current best practices. Bringing to life UI/UX designs and refactoring global and component based styles, and updating CRUD operations as needed to accomodate new designs.",
+    github: "",
+    deployed: "",
+  },
+  {
+    id: 3,
+    title: "Pix",
+    date: "FEB 2022",
+    details:
+      "An application built primarily for my better understanding of the differences between a React functional and class component. It allows the user to search for images by kewyword.",
+    fileName: "pix.png",
+    alt: 'Screen shot of "pix" website',
+    techStack: ["React", "Javascript", "CSS3"],
+    github: "https://github.com/crossigarcia/pix",
+    deployed: "https://crossigarcia.github.io/pix",
+  },
+  {
+    id: 4,
     title: "The Kara-OK Corral",
     date: "AUG 2021",
     details:
@@ -17,10 +55,10 @@ export const projectCardData = [
       "Ityped",
     ],
     github: "https://github.com/crossigarcia/kara-ok-corral",
-    deployed: "[Migrating from Heroku to new platform]",
+    deployed: "",
   },
   {
-    id: 2,
+    id: 5,
     title: "The GoodVice Blog",
     date: "JULY 2021",
     details:
@@ -37,10 +75,10 @@ export const projectCardData = [
       "Handlebars",
     ],
     github: "https://github.com/crossigarcia/the-goodvice-blog#Technologies",
-    deployed: "[Migrating from Heroku to new platform]",
+    deployed: "",
   },
   {
-    id: 3,
+    id: 6,
     title: "What's For Dinner?",
     date: "OCT 2021",
     details:
