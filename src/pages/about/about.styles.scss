@@ -1,0 +1,17 @@
+.about-content-container {
+   width: 85%;
+   height: 78vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+   margin: 80px 180px;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+
+   @media (max-width: 1140px) {
+      margin: 85px 20px;
+      width: 95%;
+   }
+}

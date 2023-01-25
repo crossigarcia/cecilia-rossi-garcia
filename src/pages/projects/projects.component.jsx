@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setTitle } from '../../redux/features/nav-title/navTitleSlice';
+import { setContent } from '../../redux/features/page-content/pageContentSlice';
 import { projectCardData } from '../../assets/constants/data';
-import { ProjectCard } from "../project-card/project-card.component";
+import { ProjectCard } from "../../components/project-card/project-card.component";
 import "./projects.styles.scss";
 
 export const ProjectsContent = (props) => {
    const [openProject, setOpenProject] = useState(null);
+   const dispatch = useDispatch();
+
+   useEffect(() => {
+     dispatch(setTitle(true));
+     dispatch(setContent("projects"));
+   }, [dispatch]);
 
    useEffect(() => {
       if (openProject) {
