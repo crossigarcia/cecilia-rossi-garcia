@@ -5,6 +5,7 @@
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-between;
+   overflow-y: auto;
 
    &.cmyk {
       background-color: var(--white);
@@ -19,14 +20,26 @@
       height: 25px;
       line-height: 25px;
       margin-left: 20px;
+      cursor: pointer;
 
       .nav-title-link {
+         transition: color 0.3s ease-in-out;
          &.cmyk {
             color: var(--black);
          }
 
          &.bw {
             color: var(--white);
+         }
+
+         &:hover {
+            &.cmyk {
+               color: magenta;
+            }
+
+            &.bw {
+               color: var(--grey);
+            }
          }
       }
    }

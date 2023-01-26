@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Outlet, Link, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setTheme } from "../../redux/features/theme/themeSlice";
 import { setLanguage } from "../../redux/features/language/languageSlice";
@@ -23,7 +23,7 @@ const Nav = () => {
   useEffect(() => {
     if (content !== "large-menu") {
       navigate(`/${content}`);
-    }
+    } 
   }, [content, navigate]);
 
   const handleThemeChange = (value) => {
@@ -38,10 +38,8 @@ const Nav = () => {
     <nav className={`nav-container ${theme}`}>
       {title && (
         <div className="nav-title-container">
-          <h1 className={`nav-title-link ${theme}`}>
-            <Link to="/" className={`nav-title-link ${theme}`}>
-              Cecilia Rossi Garc&iacute;a
-            </Link>
+          <h1 className={`nav-title-link ${theme}`} onClick={() => handleMenuClick("landing")}>
+            Cecilia Rossi Garc&iacute;a
           </h1>
         </div>
       )}

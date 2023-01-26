@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Nav />}>
-        <Route index element={<Landing />} />
+        <Route path="/landing" element={<Landing />} />
         <Route path="/home" element={<Home />} />
         <Route path="/projects" element={<ProjectsContent />} />
         <Route path="/about" element={<AboutContent />} />

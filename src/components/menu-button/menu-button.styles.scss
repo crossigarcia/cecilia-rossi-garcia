@@ -15,6 +15,13 @@ $breakpoint-phone: 1140px;
       height: 300px;
       border-radius: 300px;
       font-size: 25px;
+
+      @media (max-height: 850px) {
+         width: 230px;
+         height: 230px;
+         border-radius: 230px;
+         font-size: 25px;
+      }
    }
 
    &.top {
@@ -46,6 +53,10 @@ $breakpoint-phone: 1140px;
       
          @media (max-width: $breakpoint-phone) {
             top: 90px;
+         }
+         @media (max-height: 850px) {
+            left: calc(50% - 120px);
+            top: calc(60% - 390px);
          }
       }
 
@@ -97,6 +108,10 @@ $breakpoint-phone: 1140px;
             top: 340px;
             left: calc(50% - 150px);
          }
+         @media (max-height: 850px) {
+            left: calc(50% - 120px);
+            top: calc(60% - 230px);
+         }
       }
 
       @media (max-width: $breakpoint-phone) {
@@ -145,6 +160,10 @@ $breakpoint-phone: 1140px;
          @media (max-width: $breakpoint-phone) {
             top: 580px;
             left: calc(50% - 150px);
+         }
+         @media (max-height: 850px) {
+            left: calc(50% - 120px);
+            top: calc(60% - 75px);
          }
       }
 
