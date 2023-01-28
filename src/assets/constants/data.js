@@ -95,7 +95,7 @@ export const aboutData = {
   main: "Front end web developer with a certificate in Full-Stack Development form UC Berkeley Extension focusing on UI/UX Development and responsive web design. Born and raised in Puerto Rico I always thought I would work in the art world but in the last three years I found a passion for coding instead and enjoy merging the two worlds together. I bring an artistic eye to any new project I work on and strive to find efficient code solutions without sacrificing the UI design. I find great satisfaction in developing clean, reusable components that are both aesthetically pleasing and provide easy functionality for the user. With an acute sense of responsibility, organization and attention to detail I thrive in an environment that requires constant study and adaptability. I am particularly excited to continue to learn about new frontend technologies and UI frameworks with particular focus on application designs that are responsive and meet accessibility standards. ",
   primary: ["React", "Javascript", "Git", "Redux", "Jest", "Cypress", "HTML", "CSS", "Sass", "Material UI", "Bootstrap", "Ant Design", "Figma"],
   secondary: ["Node", "Express", "MySQL", "MongoDB", "GraphQL"],
-  additional: [ "Jira", "Asana", "Adobe Photoshop"],
+  additional: [ "Jira", "Asana", "Adobe Photoshop", "Bilingual English/Spanish"],
   experience: {
     tech: [
       {
