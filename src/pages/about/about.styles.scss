@@ -31,59 +31,12 @@
    }
 
    .skills-container {
-      width: 90%;
-      margin-right: 10%;
+      width: 100%;
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-
-      .skill-list {
-         height: 110px;
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         align-items: center;
-         justify-content: center;
-         margin: 10px 0;
-         padding: 0 25px;
-         
-         .skill {
-            border: 2px solid var(--black);
-            border-radius: 5px;
-            padding: 0 5px;
-            margin: 5px;
-            font-size: 15px;
-
-            &.cmyk {
-               border-color: rgba(0, 209, 209, 1);
-               background-color: rgba(0, 209, 209, 0.1);
-            }
-         }
-      }
-
-      .skill-btn {
-            height: 140px;
-            text-align: center;
-            margin: 10px 0;
-            font-size: 18px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 10px;
-            font-weight: 600;
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            border: 2px solid var(--black);
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.8s ease-in-out;
-
-            &:hover, &.open {
-               border-radius: 0;
-               background-color: var(--black);
-               color: var(--white);
-            }
-            
-         }
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
    }
 
    
