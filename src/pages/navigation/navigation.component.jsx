@@ -15,7 +15,12 @@ const Nav = () => {
   const { content } = useSelector((state) => state.content);
 
   const handleMenuClick = (page) => {
-    navigate(`/${page}`);
+    if (page === "contact") {
+      window.open("mailto:cecilia.rossi.garcia@gmail.com")
+    } else {
+      navigate(`/${page}`);
+    }
+    
   };
 
   const handleThemeChange = (value) => {
