@@ -4,6 +4,7 @@ import { setTitle } from "../../redux/features/nav-title/navTitleSlice";
 import { setContent } from "../../redux/features/page-content/pageContentSlice";
 import { aboutData } from "../../assets/constants/data";
 import { SkillsList } from "../../components/skills-list/skills-list.component";
+import Resume from "../../assets/resume/crossigarcia_resume.pdf";
 import "./about.styles.scss";
 
 export const AboutContent = () => {
@@ -57,7 +58,13 @@ export const AboutContent = () => {
          </div>
        </div>
        <div className="resume-container">
-         
+         <a
+           className="resume-link"
+           href={Resume}
+           download="crossigarcia_resume"
+         >
+           Download Resume
+         </a>
        </div>
      </div>
    );
