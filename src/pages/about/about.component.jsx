@@ -56,6 +56,9 @@ export const AboutContent = () => {
            />
          </div>
        </div>
+       <div className="resume-container">
+         
+       </div>
      </div>
    );
 };

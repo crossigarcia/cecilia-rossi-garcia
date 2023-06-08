@@ -1,7 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setTheme } from "../../redux/features/theme/themeSlice";
-import { setLanguage } from "../../redux/features/language/languageSlice";
+// import { setLanguage } from "../../redux/features/language/languageSlice";
 import { Switch } from "antd";
 import { MenuButton } from "../../components/menu-button/menu-button.component";
 import "./navigation.styles.scss";
@@ -22,9 +22,9 @@ const Nav = () => {
     dispatch(setTheme(value === true ? "bw" : "cmyk"));
   };
 
-  const handleLanguageChange = (value) => {
-    dispatch(setLanguage(value === true ? "esp" : "eng"));
-  };
+  // const handleLanguageChange = (value) => {
+  //   dispatch(setLanguage(value === true ? "esp" : "eng"));
+  // };
 
   return (
     <nav className={`nav-container ${theme}`}>
@@ -36,13 +36,13 @@ const Nav = () => {
         </div>
       )}
       <div className="switch-container">
-        <Switch
+        {/* <Switch
           checkedChildren="espanol"
           unCheckedChildren="english"
           checked={language === "esp"}
           onChange={handleLanguageChange}
           className={`language-switch ${language}`}
-        />
+        /> */}
         <Switch
           checkedChildren="b&w"
           unCheckedChildren="cmyk"

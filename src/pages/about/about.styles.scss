@@ -1,3 +1,5 @@
+$screen-sm-min: 576px;
+$screen-lg-min: 992px;
 .about-content-container {
    width: 100%;
    overflow: hidden;
@@ -57,7 +59,15 @@
          opacity: 0.8;
          z-index: 10;
          transition: all .3s ease-in-out;
-         animation: moveMiddle 5s linear infinite;
+         animation: moveMiddle 10s linear infinite;
+
+         @media (max-width: $screen-lg-min) {
+            font-size: 270px;
+         }
+
+         @media (max-width: $screen-sm-min) {
+            visibility: hidden;
+         }
 
          &.magenta, &.dark-gray {
             top: 12%;
