@@ -92,39 +92,59 @@ export const projectCardData = [
 ];
 
 export const aboutData = {
-  main: "Front end web developer with a certificate in Full-Stack Development form UC Berkeley Extension focusing on UI/UX Development and responsive web design. Born and raised in Puerto Rico I always thought I would work in the art world but in the last three years I found a passion for coding instead and enjoy merging the two worlds together. I bring an artistic eye to any new project I work on and strive to find efficient code solutions without sacrificing the UI design. I find great satisfaction in developing clean, reusable components that are both aesthetically pleasing and provide easy functionality for the user. With an acute sense of responsibility, organization and attention to detail I thrive in an environment that requires constant study and adaptability. I am particularly excited to continue to learn about new frontend technologies and UI frameworks with particular focus on application designs that are responsive and meet accessibility standards. ",
-  primary: ["React", "Javascript", "Git", "Redux", "Jest", "Cypress", "HTML", "CSS", "Sass", "Material UI", "Bootstrap", "Ant Design", "Figma"],
-  secondary: ["Node", "Express", "MySQL", "MongoDB", "GraphQL"],
-  additional: [ "Jira", "Asana", "Adobe Photoshop", "Bilingual English/Spanish"],
+  main: "As a Frontend Web Developer with a keen focus on UI/UX Development and responsive web design, I bring a unique perspective to the table. Armed with a certificate in Full-Stack Development from UC Berkeley Extension and a BFA from California College of the Arts I relish the challenge of combining my artistic sensibilities with my technical expertise, striving to create efficient code that doesn't skimp on style or functionality. My greatest satisfaction comes from developing clean, reusable components that not only look great but also make life easier for the user. I'm not one to sacrifice the user experience for the sake of code efficiency - I believe that both can be achieved without compromise. Thanks to my acute sense of responsibility, organization, and attention to detail, I'm always seeking opportunities to learn and grow in environments that require adaptability. I'm particularly excited to explore new frontend technologies and UI frameworks that focus on responsive design and accessibility standards. So whether you need help with UI/UX development, responsive web design, or just want to nerd out over code, I'm your go-to Frontend Web Developer.",
+  primary: [
+    "React",
+    "Javascript",
+    "HTML",
+    "CSS",
+    "Git",
+    "Tailwind",
+    "Ant Design",
+    "Figma",
+    "Redux",
+    "Jest",
+    "Cypress",
+    "Sass",
+    "Material UI",
+    "Bootstrap",
+  ],
+  secondary: ["Node", "Express", "MySQL", "MongoDB", "GraphQL", "Cognito"],
+  additional: ["Notion", "Jira", "Asana", "Adobe Photoshop", "Bilingual English/Spanish"],
   experience: {
     tech: [
       {
+        company: "Martini.ai",
+        position: "Frontend Developer - Contract",
+        time: "March 2023 - May 2023",
+      },
+      {
         company: "Drishticon",
-        position: "Front end Developer",
-        time: "NOV 2021 - PRESENT"
-      }
+        position: "Frontend Developer",
+        time: "Nov 2021 - Present",
+      },
     ],
     art: [
       {
         company: "Photoworks",
         position: "Store Co-Manger, Website Manager, Marketing",
-        time: "2016 - 2020"
+        time: "2016 - 2020",
       },
       {
         company: "Life365",
         position: "Photographer",
-        time: "2014-2016"
-      }
-    ]
+        time: "2014-2016",
+      },
+    ],
   },
   education: {
     certificate: {
       school: "UC Berkeley Extension",
-      date: 2021
+      date: 2021,
     },
     bfa: {
       school: "California College of the Arts",
-      date: 2013
-    }
-  }
+      date: 2013,
+    },
+  },
 };

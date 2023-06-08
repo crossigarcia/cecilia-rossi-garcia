@@ -1,6 +1,6 @@
 .about-content-container {
    width: 100%;
-   overflow-x: hidden;
+   overflow: hidden;
    margin: 80px 180px;
    padding: 10px 10px 10px 40px;
    display: flex;
@@ -33,9 +33,98 @@
       width: 100%;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+
+      &:hover {
+         .skills-label {
+            opacity: 0;
+            z-index: 3;
+         }
+      }
+
+      .skills-label {
+         font-size: 290px;
+         text-transform: uppercase;
+         height: 100%;
+         top: 40%;
+         width: 100%;
+         text-align: center;
+         line-height: 100px;
+         position: absolute;
+         color: yellow;
+         opacity: 0.8;
+         z-index: 10;
+         transition: all .3s ease-in-out;
+         animation: moveMiddle 5s linear infinite;
+
+         &.magenta, &.dark-gray {
+            top: 12%;
+            opacity: 0.6;
+            animation: moveTop 5s linear infinite;
+         }
+
+         &.magenta {
+            color: magenta;
+         }
+
+         &.cyan, &.gray {
+            top: 60%;
+            opacity: 0.5;
+            animation: moveBottom 5s linear infinite;
+         }
+
+         &.cyan {
+            color: cyan;
+         }
+
+         &.dark-gray {
+            color: var(--grey);
+         }
+
+         &.gray {
+            color: rgba(145, 145, 145, 1);
+         }
+
+         &.light-gray {
+            color: rgba(64, 64, 64, 1);
+         }
+
+         &:hover {
+            opacity: 0;
+            z-index: 3;
+         }
+
+         @keyframes moveTop {
+            0%, 100% {
+               top: 12%;
+            }
+            50% {
+               top: 60%;
+            }
+         }
+         @keyframes moveBottom {
+            0%, 100% {
+               top: 40%;
+            }
+            50% {
+               top: 60%;
+            }
+         }
+         @keyframes moveMiddle {
+            0%, 100% {
+               top: 60%;
+            }
+            50% {
+               top: 12%;
+            }
+         }
+      }
+
+      .large-pills-container { 
+         z-index: 5
+      }
    }
 
    

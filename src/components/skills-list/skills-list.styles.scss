@@ -1,142 +1,62 @@
 .skill-list-container {
-   padding: 15px;
-   margin: 10px;
-   width: 320px;
-   height: 430px;
-   font-size: 18px;
-   position: relative;
-   overflow: hidden;
+   width: 100%;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   margin-bottom: 20px;
+   padding: 5px 10px;
+   border-radius: 20px;
+   border: 2px solid;
    transition: all 0.5s ease-in-out;
 
-   &.cyan {
-      border: 2px solid rgb(0, 202, 202);
-      background-color: rgba(0, 202, 202, 0.1);
+   .skill-header {
+      width: 100%;
+      text-align: center;
    }
+
+   &.cyan {
+      background-color: rgb(0, 202, 202);
+      border-color: rgb(0, 202, 202);
+   }
+
    &.gray {
-      background-color: rgba(145, 145, 145, 0.1);
-      border: 2px solid rgba(145, 145, 145, 1);
-      color: var(--white);
+      background-color: rgba(145, 145, 145, 1);
+      border-color: rgba(145, 145, 145, 0.1);
    }
 
    &.magenta {
-      border: 2px solid rgb(255, 0, 255);
-      background-color: rgba(255, 0, 255, 0.1);
+      background-color: rgb(255, 0, 255);
+      border-color: rgb(255, 0, 255);
    }
+
    &.dark-gray {
-      background-color: rgba(64, 64, 64, 0.2);
-      border: 2px solid rgba(64, 64, 64, 1);
-      color: var(--white);
+      background-color: rgba(64, 64, 64, 1);
+      border-color: rgba(64, 64, 64, 0.2);
    }
 
    &.yellow {
-      border: 2px solid rgb(220, 220, 0);
-      background-color: rgba(255, 255, 0, 0.1);
+      background-color: rgb(220, 220, 0);
+      border-color: rgb(220, 220, 0);
    }
+
    &.light-gray {
-      background-color: rgba(214, 214, 214, 0.1);
-      border: 2px solid rgba(214, 214, 214, 1);
-      color: var(--white);
+      background-color: rgba(214, 214, 214, 1);
+      border-color: rgba(214, 214, 214, 0.1);
    }
-   
 
-   .wave {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: calc(100% + 22px);
-      transition: all 1s;
+   // &:hover {
+   //    background-color: transparent;
+   // }
+
+   .list-items-container {
       display: flex;
-      flex-direction: row;
+      justify-content: center;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-
-      &::before {
-         content: "";
-         position: absolute;
-         top: -22px;
-         left: 0;
-         width: 100%;
-         height: 22px;
-         animation: wavy 0.6s linear infinite;
-      }
-
-      &.cyan {
-         background-color: rgb(0, 202, 202);
-         &::before {
-            background: url('../../assets/imgs/cyanwave.png');
-         }
-      }
-
-      &.gray {
-         background-color: rgba(145, 145, 145, 1);
-         &::before {
-            background: url('../../assets/imgs/cyanwave.png');
-         }
-      }
-
-      &.magenta {
-         background-color: rgba(255, 0, 255, 1);
-         &::before {
-            background: url('../../assets/imgs/magentawave.png');
-         }
-      }
-
-      &.dark-gray {
-         background-color: rgba(64, 64, 64, 1);
-
-         &::before {
-            background: url('../../assets/imgs/cyanwave.png');
-         }
-      }
-
-      &.yellow {
-         background-color: rgba(220, 220, 0, 1);
-         &::before {
-            background: url('../../assets/imgs/yellowwave.png');
-         }
-      }
-
-      &.light-gray {
-         background-color: rgba(214, 214, 214, 1);
-
-         &::before {
-            background: url('../../assets/imgs/cyanwave.png');
-         }
-      }
-
+      padding: 5px 0;
+      margin-bottom: 10px;
       
-
-      @keyframes wavy {
-         0% { background-position-x: 0 }
-         100% { background-position-x: 118px }
-      }
-
       .list-item {
-         min-width: 120px;
-         margin: 0 10px;
-         padding: 5px 8px;
-         font-size: 15px;
-         font-weight: 800;
-         letter-spacing: 1px;
-         text-align: center;
-         border-radius: 5px;
-         border: 3px solid var(--black);
-         color: var(--black);
-         background-color: rgba(0, 0, 0, 0.1);
-      }
-   }
-
-   &:hover, &:active {
-      border-radius: 20px;
-      .wave {
-         top: 0;
+         padding: 0 15px;
       }
    }
 }
+

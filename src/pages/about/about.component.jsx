@@ -21,9 +21,40 @@ export const AboutContent = () => {
          <p className={`about-main-text ${theme}`}>{aboutData.main}</p>
        </div>
        <div className={`skills-container`}>
-         <SkillsList list={aboutData.primary} title="Primary" className={theme === 'cmyk' ? `cyan` : `gray`}/>
-         <SkillsList list={aboutData.secondary} title="Secondary" className={theme === 'cmyk' ? `magenta` : `dark-gray`}/>
-         <SkillsList list={aboutData.additional} title="Additional" className={theme === 'cmyk' ? `yellow` : `light-gray`}/>
+         <span
+           className={`skills-label ${
+             theme === "cmyk" ? `magenta` : `dark-gray`
+           }`}
+         >
+           Skills
+         </span>
+         <span
+           className={`skills-label ${
+             theme === "cmyk" ? `yellow` : `light-gray`
+           }`}
+         >
+           Skills
+         </span>
+         <span className={`skills-label ${theme === "cmyk" ? `cyan` : `gray`}`}>
+           Skills
+         </span>
+         <div className="large-pills-container">
+           <SkillsList
+             list={aboutData.primary}
+             title="Primary"
+             className={theme === "cmyk" ? `cyan` : `gray`}
+           />
+           <SkillsList
+             list={aboutData.secondary}
+             title="Secondary"
+             className={theme === "cmyk" ? `magenta` : `dark-gray`}
+           />
+           <SkillsList
+             list={aboutData.additional}
+             title="Additional"
+             className={theme === "cmyk" ? `yellow` : `light-gray`}
+           />
+         </div>
        </div>
      </div>
    );
