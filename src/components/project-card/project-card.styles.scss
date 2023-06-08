@@ -144,7 +144,7 @@ $breakpoint-tablet: 820px;
                min-width: 95%;
             }
 
-            @media (min-width: $breakpoint-tablet) {
+            @media (max-width: $breakpoint-tablet) {
                width: fit;
             }
          }
