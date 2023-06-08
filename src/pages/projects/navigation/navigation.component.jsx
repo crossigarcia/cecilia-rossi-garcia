@@ -30,7 +30,7 @@ const Nav = () => {
     <nav className={`nav-container ${theme}`}>
       {title && (
         <div className="nav-title-container">
-          <h1 className={`nav-title-link ${theme}`} onClick={() => handleMenuClick("landing")}>
+          <h1 className={`nav-title-link ${theme}`} onClick={() => handleMenuClick("")}>
             Cecilia Rossi Garc&iacute;a
           </h1>
         </div>
