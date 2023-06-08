@@ -1,4 +1,5 @@
-$breakpoint-phone: 1140px;
+$breakpoint-phone: 640px;
+$breakpoint-tablet: 820px;
 .menu-button {
    border: none;
    font-weight: 600;
@@ -61,8 +62,12 @@ $breakpoint-phone: 1140px;
       }
 
       @media (max-width: $breakpoint-phone) {
-         left: 20px;
-         top: 85px;
+         left: 30px;
+         top: 130px;
+      }
+      @media (min-width: $breakpoint-tablet) {
+         left: 30px;
+         top: 80px;
       }
 
       &:hover {
@@ -116,8 +121,12 @@ $breakpoint-phone: 1140px;
       }
 
       @media (max-width: $breakpoint-phone) {
-         left: 87px;
-         top: 85px;
+         left: 93px;
+         top: 130px;
+      }
+      @media (min-width: $breakpoint-tablet) {
+         left: 150px;
+         top: 80px;
       }
 
       &:hover {
@@ -156,7 +165,7 @@ $breakpoint-phone: 1140px;
       }
 
       &.large-menu {
-         left: calc(60% - 140px);
+         left: calc(50% - 20px);
          top: calc(50% - 90px);
       
          @media (max-width: $breakpoint-phone) {
@@ -171,7 +180,11 @@ $breakpoint-phone: 1140px;
 
       @media (max-width: $breakpoint-phone) {
          left: 150px;
-         top: 85px;
+         top: 130px;
+      }
+      @media (min-width: $breakpoint-tablet) {
+         left: 275px;
+         top: 80px;
       }
 
       &:hover {
