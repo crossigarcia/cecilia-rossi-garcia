@@ -151,6 +151,10 @@ $screen-lg-min: 992px;
          font-size: 50px;
          text-transform: uppercase;
          text-align: center;
+
+         &.bw {
+            color: var(--white);
+         }
       }
    }
 

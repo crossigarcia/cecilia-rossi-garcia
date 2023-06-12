@@ -22,12 +22,12 @@ export const ProjectCard = ({ project, ...props }) => {
             {project.resp && <span className={`add-text ${theme}`}><span style={{fontWeight: "800", marginRight: "20px", width: "150px", display: "inline-block"}}>Responsabilities:</span> 
                {project.resp}
             </span>}
-            {!project.resp && (<><span className={`add-text ${theme}`}><span style={{fontWeight: "800", marginRight: "20px", width: "100px", display: "inline-block"}}>Github:</span> 
+            {project.github && (<span className={`add-text ${theme}`}><span style={{fontWeight: "800", marginRight: "20px", width: "100px", display: "inline-block"}}>Github:</span> 
                <a href={project.github} target="_blank" rel="noreferrer" className={`link ${theme}`}>{project.github}</a>
-            </span>
-            <span className={`add-text ${theme}`}><span style={{fontWeight: "800", marginRight: "20px", width: "100px", display: "inline-block"}}>Deployed:</span> 
+            </span>)}
+            {project.deployed && <span className={`add-text ${theme}`}><span style={{fontWeight: "800", marginRight: "20px", width: "100px", display: "inline-block"}}>Deployed:</span> 
                {project.deployed ? <a href={project.deployed} target="_blank" rel="noreferrer" className={`link ${theme}`}>{project.deployed}</a> : "[Migrating from Heroku to new platform]"}
-            </span></>)}
+            </span>}
          </div>
       )}
       <div className={`project-card-img-container ${props.className}`}>

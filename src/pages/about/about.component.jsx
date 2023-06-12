@@ -59,7 +59,7 @@ export const AboutContent = () => {
        </div>
        <div className="resume-container">
          <a
-           className="resume-link"
+           className={`resume-link ${theme}`}
            href={Resume}
            download="crossigarcia_resume"
          >

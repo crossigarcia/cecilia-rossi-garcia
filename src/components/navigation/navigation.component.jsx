@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setTheme } from "../../redux/features/theme/themeSlice";
 // import { setLanguage } from "../../redux/features/language/languageSlice";
 import { Switch } from "antd";
-import { MenuButton } from "../../components/menu-button/menu-button.component";
+import { MenuButton } from "../menu-button/menu-button.component";
 import "./navigation.styles.scss";
 
 const Nav = () => {
